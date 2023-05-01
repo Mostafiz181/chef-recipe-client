@@ -1,0 +1,16 @@
+.btn-login{
+    padding: 10px 20px;
+    border: 0;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.navbar-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.801);
+}
