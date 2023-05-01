@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css"
 import { FaGrinBeam } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -12,8 +13,12 @@ const Header = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
-              <Nav.Link className="navbar-text" href="#features">Home</Nav.Link>
-              <Nav.Link className="navbar-text" href="#pricing">Blog</Nav.Link>
+              <Nav.Link className="navbar-text" href="#features">
+                <Link to="/">Home</Link>
+              </Nav.Link>
+              <Nav.Link className="navbar-text" href="#pricing">
+                <Link to="/blog">Blog</Link>
+              </Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link href="#deets"><FaGrinBeam></FaGrinBeam></Nav.Link>
