@@ -1,0 +1,26 @@
+#footer-part{
+    width: 100%;
+    padding: 50px 0;
+    background-color: #191919;
+}
+
+#footer-part .footer h2{
+    color: #ffffffd3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#footer-part .footer p{
+    color: #dbd4d4;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: .4s;
+}
+
+#footer-part .footer p:hover{
+    margin-left: 15px;
+    cursor: pointer;
+}
