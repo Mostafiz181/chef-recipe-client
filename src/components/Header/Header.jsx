@@ -3,13 +3,14 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css"
 import { FaGrinBeam } from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png"
 
 const Header = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Ranna Ghor</Navbar.Brand>
+        <Container className="navbar-part">
+          <Navbar.Brand href="#home"><img src={logo}  alt="" />FoodHub</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mx-auto">
