@@ -1,8 +1,8 @@
 import React from 'react';
-import Banner from '../banner/banner';
 import FoodGellary from '../FoodGellary/FoodGellary';
 import OurDelicious from '../OurDelicious/OurDelicious';
-import Footer from '../Footer/Footer';
+import Banner from '../banner/banner';
+
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <FoodGellary></FoodGellary>
             <OurDelicious></OurDelicious>
-            <Footer></Footer>
+          
            
             
         </div>

@@ -7,13 +7,13 @@ import logo from "../../assets/logo.png"
 
 const Header = () => {
   return (
-    <div>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-        <Container className="navbar-part">
-          <Navbar.Brand href="#home"><img src={logo}  alt="" />FoodHub</Navbar.Brand>
+    <div id="navbar-part">
+      <Navbar className="nav" collapseOnSelect expand="lg" bg="" variant="">
+        <Container >
+          <Navbar.Brand className="navbar-part" href="#home"><img src={logo}  alt="" />FoodHub</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="mx-auto">
+            <Nav className="ms-auto ">
               <Nav.Link className="navbar-text" href="#features">
                 <Link to="/">Home</Link>
               </Nav.Link>

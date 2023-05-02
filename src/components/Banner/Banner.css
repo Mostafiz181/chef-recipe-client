@@ -1,20 +1,64 @@
-.banner-part img{
-    width: 100%; 
-      
-}
 
+.banner-part img{
+    width: 100%;
+    height: 600px;
+    
+}
 .banner-part{
     position: relative;
 }
 
-.banner-item{
+.banner-part .banner-overlay{
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.493);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.645);
 }
+
+.banner-part .banner-overlay h1{
+    color: #3c50e7;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.banner-part .banner-overlay h3{
+    color: #db891c;
+    text-align: center;
+    font-weight: bold;
+    font-size: 65px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+
+}
+
+.banner-part .banner-overlay p{
+    text-align: center;
+    color: #fff;
+    
+  
+}
+
+
+
+.banner-part .banner-text{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 

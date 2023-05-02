@@ -1,3 +1,18 @@
+#navbar-part .nav{
+    background-color: #100908c7;
+ 
+}
+
+#navbar-part .navbar-part{
+    color: #ceae0d;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+
+
 .btn-login{
     padding: 10px 20px;
     border: 0;
@@ -8,11 +23,15 @@
     font-weight: bold;
 }
 
-.navbar-text {
+.navbar-text  a{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.801);
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    padding-right: 40px;
+    
+   
 }
 
 .navbar-part img{

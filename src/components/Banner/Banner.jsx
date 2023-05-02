@@ -1,14 +1,29 @@
 import React from "react";
-import banner from "../../assets/banner.jpg";
 import "./Banner.css";
+import { Container } from "react-bootstrap";
 
 const Banner = () => {
   return (
     <div className="banner-part">
-      <img  src={banner} alt="" />
+      <img src="../../../public/banner.jpg" alt="" />
+      <div className="banner-overlay">
+        <Container>
+          <div className="banner-text">
+            <h1>Welcome To Our</h1>
+            <h3>FoodHub Restaurant</h3>
+            <p>
+              Its our delicious food restaurant. We always try to provide our
+              best. <br /> In our
+              restaurant food  are cooks by experienced cook. Welcome to
+              our restaurant.
+            </p>
 
-      <div className="banner-item"></div>
+           
+          </div>
 
+          
+        </Container>
+      </div>
     </div>
   );
 };
