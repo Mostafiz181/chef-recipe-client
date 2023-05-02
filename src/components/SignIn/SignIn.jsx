@@ -1,29 +1,48 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./SignIn.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../providers/AuthProvider";
 
 const SignIn = () => {
-  const [error,setError]= useState('')
-  const [success,setSuccess]= useState('')
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
 
-  const handleToRegister = event =>{
+  const {createUser}= useContext(AuthContext)
+
+  const handleToRegister = (event) => {
     event.preventDefault();
-    const form =event.target;
-    const name =form.text .value;
+    const form = event.target;
+    const name = form.text.value;
     const email = form.email.value;
     const password = form.password.value;
-    console.log(name,email,password)
-  
-    if(password.length < 6){
-      setError("Password at least 6 characters")
-      return
-    }
-    else{
-      setSuccess('Successfully register')
+    console.log(name, email, password);
 
+
+
+    setError("");
+    if (password.length < 6) {
+      setError("Password at least 6 characters");
+      return;
+    } else {
+      setSuccess("Successfully register");
     }
-  }
+
+
+
+    createUser(email,password)
+    .then(result=>{
+      const loggedUser = result.user;
+      console.log(loggedUser)
+    })
+    .catch(error=>{
+      console.log(error);
+      setError(error.message)
+    })
+
+
+
+  };
   return (
     <div>
       <div id="login-part">
@@ -57,6 +76,14 @@ const SignIn = () => {
                       placeholder="Enter Your password"
                       required
                     />
+
+                    {/* <input
+                      type="text"
+                      name="text"
+                      id="text"
+                      placeholder="Enter Your photoUrl"
+                      required
+                    /> */}
 
                     <button className="login">Register</button>
 

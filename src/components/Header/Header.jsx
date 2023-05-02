@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css"
 import { FaGrinBeam } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
+import { AuthContext } from "../providers/AuthProvider";
 
 const Header = () => {
+
+  const {user} = useContext(AuthContext)
+
+
+
   return (
     <div id="navbar-part">
       <Navbar className="nav" collapseOnSelect expand="lg" bg="" variant="">
@@ -28,6 +34,8 @@ const Header = () => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
+
+          {user && <span>welcome {user.email} </span> }
         </Container>
       </Navbar>
     </div>
