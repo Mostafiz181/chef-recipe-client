@@ -3,6 +3,7 @@ import "./SignIn.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import { updateProfile } from "firebase/auth";
 
 const SignIn = () => {
   const [error, setError] = useState("");
@@ -16,6 +17,7 @@ const SignIn = () => {
     const name = form.text.value;
     const email = form.email.value;
     const password = form.password.value;
+    const photoUrl = form.photoUrl.value;
     console.log(name, email, password);
 
 
@@ -34,6 +36,10 @@ const SignIn = () => {
     .then(result=>{
       const loggedUser = result.user;
       console.log(loggedUser)
+      //
+      handleUpdate(loggedUser,password,photoUrl)
+
+      //
     })
     .catch(error=>{
       console.log(error);
@@ -43,6 +49,16 @@ const SignIn = () => {
 
 
   };
+
+
+  const handleUpdate = (createUser, name, photoUrl) => {
+    updateProfile(createUser, { displayName: name, photoURL: photoUrl })
+      .then(() => {})
+      .catch((error) => console.error(error));
+  };
+
+
+
   return (
     <div>
       <div id="login-part">
@@ -77,13 +93,13 @@ const SignIn = () => {
                       required
                     />
 
-                    {/* <input
+                    <input
                       type="text"
-                      name="text"
-                      id="text"
+                      name="photoUrl"
+                      id="photoUrl"
                       placeholder="Enter Your photoUrl"
                       required
-                    /> */}
+                    />
 
                     <button className="login">Register</button>
 

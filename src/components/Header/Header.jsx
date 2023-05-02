@@ -1,14 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css"
 import { FaGrinBeam } from 'react-icons/fa';
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
 import { AuthContext } from "../providers/AuthProvider";
+import { onAuthStateChanged, updateCurrentUser } from "firebase/auth";
 
 const Header = () => {
 
-  const {user} = useContext(AuthContext)
+  const {user,logOut} = useContext(AuthContext)
+  console.log(user)
+
+  const handleLogout = ()=>{
+        logOut()
+        .then(result=>{})
+        .catch(error=> console.error(error))
+  }
 
 
 
@@ -28,14 +36,14 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets"><FaGrinBeam></FaGrinBeam></Nav.Link>
+              <Nav.Link href="#deets"></Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
                <Link to="login"><button className="btn-login" >Login</button></Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
 
-          {user && <span>welcome {user.email} </span> }
+          {user && <span className="text-white"> <img className="photo-url" src={user.photoURL} alt="" /> <button className="btn-signOut" onClick={handleLogout}>Log Out</button> </span> }
         </Container>
       </Navbar>
     </div>
