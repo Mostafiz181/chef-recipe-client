@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./SignIn.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 const SignIn = () => {
+  const [error,setError]= useState('')
+  const [success,setSuccess]= useState('')
+
+  const handleToRegister = event =>{
+    event.preventDefault();
+    const form =event.target;
+    const name =form.text .value;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(name,email,password)
+  
+    if(password.length < 6){
+      setError("Password at least 6 characters")
+      return
+    }
+    else{
+      setSuccess('Successfully register')
+
+    }
+  }
   return (
     <div>
       <div id="login-part">
@@ -14,7 +34,7 @@ const SignIn = () => {
                 <div className="form">
                   <h2>Register</h2>
 
-                  <form>
+                  <form onSubmit={handleToRegister}>
                     <input
                       type="text"
                       name="text"
@@ -38,14 +58,6 @@ const SignIn = () => {
                       required
                     />
 
-                    <input
-                      type="text"
-                      name="photo"
-                      id="photo"
-                      placeholder="Enter Your Photo Url"
-                      required
-                    />
-
                     <button className="login">Register</button>
 
                     <p className="link">
@@ -56,6 +68,9 @@ const SignIn = () => {
                         </Link>{" "}
                       </small>
                     </p>
+
+                    <p className="text-error">{error}</p>
+                    <p className="text-success">{success}</p>
                   </form>
                 </div>
               </div>
