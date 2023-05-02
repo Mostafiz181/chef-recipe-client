@@ -24,7 +24,7 @@ const Header = () => {
             <Nav>
               <Nav.Link href="#deets"><FaGrinBeam></FaGrinBeam></Nav.Link>
               <Nav.Link eventKey={2} href="#memes">
-               <button className="btn-login">Login</button>
+               <Link to="login"><button className="btn-login" >Login</button></Link>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
