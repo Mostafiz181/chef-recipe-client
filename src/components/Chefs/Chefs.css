@@ -1,0 +1,22 @@
+#chefs-part{
+    width: 100%;
+    padding: 50px 0;
+    /* background-color: coral; */
+}
+
+.team-title h2{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.689);
+    font-size: 40px;
+}
+
+.team-title h3{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.689);
+    font-size: 25px;
+    margin: 20px 0;
+}

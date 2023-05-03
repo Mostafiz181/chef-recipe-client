@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
 import { AuthContext } from "../providers/AuthProvider";
 import { onAuthStateChanged, updateCurrentUser } from "firebase/auth";
+import ActiveLink from "../ActiveLink/ActiveLink";
 
 const Header = () => {
 
@@ -29,10 +30,10 @@ const Header = () => {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto ">
               <Nav.Link className="navbar-text" href="#features">
-                <Link to="/">Home</Link>
+                <ActiveLink to="/">Home</ActiveLink>
               </Nav.Link>
               <Nav.Link className="navbar-text" href="#pricing">
-                <Link to="/blog">Blog</Link>
+                <ActiveLink to="/blog">Blog</ActiveLink>
               </Nav.Link>
             </Nav>
             <Nav>

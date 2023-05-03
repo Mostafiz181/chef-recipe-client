@@ -2,7 +2,8 @@ import React from 'react';
 import FoodGellary from '../FoodGellary/FoodGellary';
 import OurDelicious from '../OurDelicious/OurDelicious';
 import Banner from '../banner/banner';
-import Team from '../Team/Team';
+import Chefs from '../Chefs/chefs';
+
 
 
 
@@ -10,7 +11,7 @@ const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Team></Team>
+            <Chefs></Chefs>
             <FoodGellary></FoodGellary>
             <OurDelicious></OurDelicious>
           
