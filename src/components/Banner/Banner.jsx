@@ -10,7 +10,7 @@ const Banner = () => {
         <Container>
           <div className="banner-text">
             <h1>Welcome To Our</h1>
-            <h3>FoodHub Restaurant</h3>
+            <h3>Foodies and Goodies Restaurant</h3>
             <p>
               Its our delicious food restaurant. We always try to provide our
               best. <br /> In our

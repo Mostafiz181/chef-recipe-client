@@ -20,12 +20,11 @@ const Header = () => {
   }
 
 
-
   return (
     <div id="navbar-part">
       <Navbar className="nav" collapseOnSelect expand="lg" bg="" variant="">
         <Container >
-          <Navbar.Brand className="navbar-part" href="#home"><img src={logo}  alt="" />FoodHub</Navbar.Brand>
+          <Navbar.Brand className="navbar-part" href="#home"><img src={logo}  alt="" />Fodies and Goodies</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto ">
@@ -37,7 +36,7 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets"></Nav.Link>
+              
               <Nav.Link eventKey={2} href="#memes">
                <Link to="login"><button className="btn-login" >Login</button></Link>
               </Nav.Link>

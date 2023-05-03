@@ -18,20 +18,21 @@
     border: 0;
     background-color: rgb(16,76,186);
     color: #fff;
+    font-size: 20px;
     border-radius: 8px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
 }
 
 .navbar-text  a{
+    display: block;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     font-size: 20px;
     color: #fff;
     text-decoration: none;
+    padding: 10px 15px;
   
-    
-   
 }
 
 .navbar-part img{
@@ -43,9 +44,9 @@
     padding: 10px 15px;
     color: #fff;
     border: 0;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: rgb(16, 35, 205);
+    background-color: rgb(50, 69, 240);
     border-radius: 5px;
 }
 
@@ -61,4 +62,6 @@
 
 .navbar-text a, .navbar-text a:focus, .navbar-text a:hover{
     color: #ffff;
+    background-color: coral;
+    border-radius: 10px;
 }

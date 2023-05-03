@@ -13,6 +13,8 @@ import NotFound from "./components/NotFound/NotFound";
 import ChefDetails from "./components/ChefDetails/ChefDetails";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PrivateRoute from "./components/Routes/PrivateRoute";
+import CardDetails from "./components/ChefDetails/CardDetails";
 
 const router = createBrowserRouter([
   {
@@ -35,9 +37,10 @@ const router = createBrowserRouter([
         path: "/signIn",
         element: <SignIn></SignIn>,
       },
+
       {
         path:'/ChefDetails/:id',
-        element:<ChefDetails></ChefDetails>,
+        element: <PrivateRoute><ChefDetails></ChefDetails></PrivateRoute>,
         loader:({params})=> fetch(`http://localhost:5000/chefs/${params.id}`)
 
       },
