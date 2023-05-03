@@ -1,0 +1,57 @@
+.chef-details-part{
+    width: 100%;
+    padding: 40px 0;
+    background: linear-gradient(to bottom, #2167e0 0%, #a141a6 100%);
+}
+
+.chef-details-part h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.chef-details-part .chef-img{
+    width: 100%;
+    height: 300px;
+    
+}
+
+.chef-details-part .chef-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.chef-details-part .chef-more{
+    width: 100%;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.chef-details-part .chef-more .chef-name{
+    color: rgba(0, 0, 0, 0.727);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.chef-details-part .chef-more .chef-bio{
+    color: rgba(0, 0, 0, 0.727);
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.chef-details-part .chef-more .chef-count{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: rgb(128, 128, 10);
+}
+
+.chef-info{
+    margin-top: 20px;
+}

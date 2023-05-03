@@ -1,15 +1,16 @@
 import React from "react";
 import "./Chef.css";
 import { Button, Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Chef = ({ chef }) => {
-  const { chef_picture, chef_name, years_of_experience, num_recipes, likes } =
+  const {id, chef_picture, chef_name, years_of_experience, num_recipes, likes } =
     chef;
   console.log(chef);
   return (
     <>
       <Col lg={4}>
-        <Card className="card mb-3">
+        <Card className="card mb-5 shadow">
           <Card.Img
             variant="top"
             className="img"
@@ -22,7 +23,7 @@ const Chef = ({ chef }) => {
               <p>Experience: {years_of_experience}</p>
               <p>Recipes:{num_recipes}</p>
               <p>Likes:{likes}</p>
-              <Button className="btn-view" variant="primary">view details</Button>
+              <Link to={`ChefDetails/${id}`}><Button className="btn-view" variant="primary">view recipe</Button></Link>
             </div>
 
             

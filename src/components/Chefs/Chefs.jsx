@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Chefs.css";
-import { Col, Container, Row } from "react-bootstrap";
+import {  Container, Row } from "react-bootstrap";
 import Chef from "../Chef/Chef";
 
 const Chefs = () => {

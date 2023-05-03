@@ -9,6 +9,10 @@ import Blog from "./components/Blog/Blog";
 import Login from "./Login/Login";
 import SignIn from "./components/SignIn/SignIn";
 import AuthProvider from "./components/providers/AuthProvider";
+import NotFound from "./components/NotFound/NotFound";
+import ChefDetails from "./components/ChefDetails/ChefDetails";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +35,16 @@ const router = createBrowserRouter([
         path: "/signIn",
         element: <SignIn></SignIn>,
       },
+      {
+        path:'/ChefDetails/:id',
+        element:<ChefDetails></ChefDetails>,
+        loader:({params})=> fetch(`http://localhost:5000/chefs/${params.id}`)
+
+      },
+      {
+        path:"*",
+        element:<NotFound></NotFound>
+      }
     ],
   },
 ]);
@@ -38,7 +52,10 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AuthProvider>
+
       <RouterProvider router={router} />
+      <ToastContainer></ToastContainer>
     </AuthProvider>
+
   </React.StrictMode>
 );
