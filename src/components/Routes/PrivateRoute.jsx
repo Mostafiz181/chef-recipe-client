@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import "./PrivateRoute.css"
 import { AuthContext } from '../providers/AuthProvider';
 import { Navigate, useLocation } from 'react-router-dom';
 
@@ -9,7 +10,9 @@ const PrivateRoute = ({children}) => {
     console.log(location)
 
     if(loading){
-        return <div>Loading.......</div>
+        return <div className="spinner-border text-dark spinner" role="status">
+        <span className="visually-hidden">Loading...</span>
+      </div>
     }
 
     if(user){
