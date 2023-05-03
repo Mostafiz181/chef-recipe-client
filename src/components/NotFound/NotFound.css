@@ -1,7 +1,7 @@
 
 .error-part{
     width: 100%;
-    height: 500px;
+    padding: 50px 0;
     background:linear-gradient(to bottom, #2167e0 0%, #a141a6 100%) ;
 }
 
@@ -42,4 +42,9 @@
     font-size: 20px;
     font-weight: bold;
     border-radius: 10px;
+}
+
+.error-img{
+    width: 600px;
+    height: 400px;
 }
