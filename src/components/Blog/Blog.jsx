@@ -1,10 +1,23 @@
 import React from "react";
 import "./Blog.css";
+import ReactToPdf from "react-to-pdf";
 import { Col, Container, Row } from "react-bootstrap";
 
 const Blog = () => {
+  const ref = React.createRef();
   return (
-    <div id="blog-part">
+    <div>
+      <ReactToPdf targetRef={ref} filename="div-blue.pdf">
+        {({ toPdf }) => (
+          <button className=" btn-primary mb-10" onClick={toPdf}>
+            Generate pdf
+          </button>
+        )}
+      </ReactToPdf>
+
+      <div style={{ width: 1000, height: 800, background: 'white' }} ref={ref} >
+
+      <div id="blog-part">
       <Container>
         <Row>
           <Col lg={12}>
@@ -48,6 +61,12 @@ const Blog = () => {
         </Row>
       </Container>
     </div>
+
+
+      </div>
+    </div>
+
+
   );
 };
 
