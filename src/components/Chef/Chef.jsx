@@ -18,7 +18,7 @@ const Chef = ({ chef }) => {
     <>
       <Col lg={4}>
         <Card className="card mb-5 shadow">
-          <LazyLoad width={500} height={300} threshold={1}>
+          <LazyLoad  threshold={1}>
             <Card.Img
               variant="top"
               className="img"

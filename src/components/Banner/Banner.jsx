@@ -1,11 +1,12 @@
 import React from "react";
 import "./Banner.css";
 import { Container } from "react-bootstrap";
+import banner from "../../assets/banner.jpg"
 
 const Banner = () => {
   return (
     <div className="banner-part">
-      <img src="../../../public/banner.jpg" alt="" />
+      <img src={banner} alt="" />
       <div className="banner-overlay">
         <Container>
           <div className="banner-text">
