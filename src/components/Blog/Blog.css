@@ -18,3 +18,16 @@
     font-weight: bold;
     color: rgb(37, 26, 26);
 }
+
+.btn-download{
+    border: 0;
+    display: block;
+    padding: 12px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    background-color:rgb(16,76,186);
+    border-radius: 10px;
+    margin-top: 10px;
+}
