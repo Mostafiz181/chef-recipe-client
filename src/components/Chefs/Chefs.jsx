@@ -12,7 +12,7 @@ const Chefs = () => {
   // test end from here
 
   useEffect(() => {
-    fetch("http://localhost:5000/chefs")
+    fetch("https://shef-recipe-server-mostafiz181.vercel.app/chefs")
       .then((res) => res.json())
       .then((data) => setChefs(data))
       .catch((error) => console.error(error));
