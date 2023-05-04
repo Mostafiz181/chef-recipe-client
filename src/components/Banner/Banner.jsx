@@ -18,6 +18,8 @@ const Banner = () => {
               our restaurant.
             </p>
 
+            <a className="btn-ex" href="">Explore More</a>
+
            
           </div>
 

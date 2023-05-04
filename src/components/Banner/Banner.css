@@ -50,6 +50,23 @@
     position: relative;
 }
 
+.btn-ex{
+   display: block;
+   position: absolute;
+   padding: 15px 30px;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+   color: #db891c;
+   background-color: #fff;
+   border-radius: 30px;
+   border: 2px solid #db891c;
+   top: 125%;
+   left: 50%;
+   transform: translateX(-50%)translateY(-50%);
+    
+}
+
 
 
 

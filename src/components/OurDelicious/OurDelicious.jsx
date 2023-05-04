@@ -97,7 +97,7 @@ const OurDelicious = () => {
                   for serve. They are always provide their best.
                 </p>
 
-                <button>Order Now</button>
+                <button className="btn-order">Order Now</button>
               </div>
             </Col>
           </Row>
