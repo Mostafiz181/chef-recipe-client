@@ -24,13 +24,13 @@ const CardDetails = ({ recipe }) => {
       <Card style={{height: "750px"}}>
         <Card.Img style={{height:"250px"}} variant="top" src={recipe_img} />
         <Card.Body>
-          <Card.Title>{recipe_name}</Card.Title>
+          <Card.Title className="">{recipe_name}</Card.Title>
 
           <p> Cooking Method: {cooking_method}</p>
           {
             ingredients.map((i,index)=> <li key={index}> {i}</li>)
           }
-          <p>{rating}</p>
+          <p>Ratings : {rating}</p>
           <Button  className={`${deseable? "btn btn-primary disabled": ""} `} onClick={handleToFav}  variant="primary">Favorite</Button>
         </Card.Body>
       </Card>

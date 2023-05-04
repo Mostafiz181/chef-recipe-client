@@ -7,9 +7,14 @@ import { AuthContext } from "../components/providers/AuthProvider";
 import app from "../firebase/firebase.config";
 
 const Login = () => {
-  // test for google sign in methods
 
-  // const [user,setUser]=useState(null)
+
+  const navigate = useNavigate();
+  const location =useLocation();
+  console.log(location);
+
+  const from = location.state?.from?.pathname || '/';
+
 
 
   const auth=getAuth(app)
@@ -40,12 +45,7 @@ const Login = () => {
   }
 
 
-  const navigate = useNavigate();
-  const location =useLocation();
-  console.log(location);
 
-  const from = location.state?.from?.pathname || '/';
-  //test for google sign in methods
 
   const {signIn} = useContext(AuthContext);
 
