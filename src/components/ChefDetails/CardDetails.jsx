@@ -20,7 +20,7 @@ const CardDetails = ({ recipe }) => {
   const {recipe_name, cooking_method,recipe_img,ingredients,rating } = recipe;
 
   return (
-    <Col lg={4}>
+    <Col lg={4} className="g-4">
       <Card style={{height: "750px"}}>
         <Card.Img style={{height:"250px"}} variant="top" src={recipe_img} />
         <Card.Body>

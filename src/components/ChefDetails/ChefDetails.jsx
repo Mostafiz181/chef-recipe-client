@@ -37,7 +37,7 @@ const ChefDetails = () => {
               <img src={chef_picture} alt="" />
             </div>
           </Col>
-          <Col lg={8}>
+          <Col lg={8} className="g-2">
             <div className="chef-more shadow-lg">
               <h1 className="chef-name">{chef_name}</h1>
               <p className="chef-bio">{bio}</p>
