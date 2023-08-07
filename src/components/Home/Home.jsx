@@ -5,6 +5,7 @@ import Banner from '../banner/banner';
 import Chefs from '../Chefs/chefs';
 import Special from '../Special/Special';
 import Recent from '../Recent/Recent';
+import Enjoy from '../Enjoy/Enjoy';
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
             <OurDelicious></OurDelicious>
             <Special></Special>
             <Recent></Recent>
+            <Enjoy></Enjoy>
           
            
             

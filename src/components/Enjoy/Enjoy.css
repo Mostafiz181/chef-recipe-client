@@ -1,0 +1,12 @@
+#enjoy-part{
+    background-image: url(../../assets/bkg-img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 320px 0;
+}
+
+#enjoy-part .enjoy-text{
+    text-align: center;
+    color: #ffff;
+    font-family: 'Open Sans', sans-serif;
+}
