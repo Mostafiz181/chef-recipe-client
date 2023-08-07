@@ -3,6 +3,7 @@ import FoodGellary from '../FoodGellary/FoodGellary';
 import OurDelicious from '../OurDelicious/OurDelicious';
 import Banner from '../banner/banner';
 import Chefs from '../Chefs/chefs';
+import Special from '../Special/Special';
 
 
 
@@ -14,6 +15,7 @@ const Home = () => {
             <Chefs></Chefs>
             <FoodGellary></FoodGellary>
             <OurDelicious></OurDelicious>
+            <Special></Special>
           
            
             

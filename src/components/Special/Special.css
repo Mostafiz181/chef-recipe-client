@@ -1,0 +1,63 @@
+#special-part{
+    padding: 20px 0;
+}
+
+#special-part .special-text{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#special-part .special-text h1{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.689);
+
+}
+
+#special-part .special-text p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.689);
+    
+
+}
+
+.special-item img{
+    width: 100%;
+    
+  
+}
+
+#special-part .special-part{
+    position: relative;
+    
+  
+}
+
+
+
+.special-item .overlay{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.474);
+    opacity: 0;
+    transition: .4s;
+}
+
+#special-part .special-part:hover .overlay{
+    opacity: 1;
+}
+
+#special-part  .special-semitext{
+    text-align: center;
+    margin-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.474);
+}
+
