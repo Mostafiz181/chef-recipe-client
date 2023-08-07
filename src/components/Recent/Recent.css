@@ -1,0 +1,50 @@
+#recent-part{
+    padding: 20px 0;
+    
+}
+
+#recent-part .recent-text h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.689);
+}
+
+#recent-part .recent-item{
+    margin-top: 20px;
+    position: relative;
+}
+
+#recent-part .recent-item .recent-left-img img{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+
+
+
+#recent-part .recent-item .recent-main img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+
+#recent-part .recent-item .recent-main .recent-bottom{
+    margin-top: 22px;
+}
+
+#recent-part .recent-item h3{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.689);
+    font-family: 'Open Sans', sans-serif;
+}
+
+#recent-part .recent-item p{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.689);
+    font-family: 'Open Sans', sans-serif;
+}
