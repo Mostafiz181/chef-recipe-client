@@ -8,5 +8,10 @@
 #enjoy-part .enjoy-text{
     text-align: center;
     color: #ffff;
+
     font-family: 'Open Sans', sans-serif;
+}
+
+#enjoy-part .enjoy-text h1{
+    font-weight: bold;
 }
